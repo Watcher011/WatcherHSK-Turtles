@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== TortleHead ====================-->
+  <GeneDef>
+    <defName>OE_TortleHead</defName>
+    <label>tortle head</label>
+    <description>Carriers of this gene has a tortle head.</description>
+    <iconPath>UI/Icons/Genes/OE_Gene_TortleHead</iconPath>
+	<displayCategory>Cosmetic</displayCategory>
+	<displayOrderInCategory>704</displayOrderInCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+	<biostatCpx>0</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <forcedHeadTypes>
+      <li>OE_Female_TortleHead_Normal</li>
+	  <li>OE_Male_TortleHead_Normal</li>
+	  <li>OE_Female_TortleHead_Gaunt</li>
+	  <li>OE_Male_TortleHead_Gaunt</li>
+	  <li>OE_Female_TortleHead_Heavy</li>
+	  <li>OE_Male_TortleHead_Heavy</li>
+    </forcedHeadTypes>
+    <exclusionTags>
+      <li>Fur</li>
+    </exclusionTags>
+  </GeneDef>
+
+<!--=============== TortleFingers ====================-->
+  <GeneDef ParentName="GeneHandsBase">
+    <defName>OE_TortleFingers</defName>
+    <label>tortle fingers</label>
+    <description>Tortle rough fingers improve work with medical instruments. But it's difficult to work with ranged weapon.</description>
+    <iconPath>UI/Icons/Genes/OE_Gene_TortleFingers</iconPath>
+    <displayOrderInCategory>703</displayOrderInCategory>
+	<statOffsets>
+	  <MedicalOperationSpeed>0.25</MedicalOperationSpeed>
+	  <SurgerySuccessChanceFactor>0.25</SurgerySuccessChanceFactor>
+	  <AimingDelayFactor>0.25</AimingDelayFactor>
+    </statOffsets>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>turtle</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>finger</symbol></li>
+        <li><symbol>turtle</symbol></li>
+		<li><symbol>medical</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+<!--=============== TortleShell ====================-->
+   <GeneDef>
+    <defName>OE_TortleShell</defName>
+    <label>tortle shell</label>
+    <description>Carriers of this gene have tortle shell. This is a very strong shell that significantly reduces taken damage, allows to carry much more weight, but makes it difficult and slow to move.</description>
+    <iconPath>UI/Icons/Genes/OE_Gene_TortleShell</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+	<displayOrderInCategory>704</displayOrderInCategory>
+	<graphicData>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/TortleShell/TortleShell</graphicPath>
+	  <drawNorthAfterHair>true</drawNorthAfterHair>
+      <useSkinShader>true</useSkinShader>
+	  <drawLoc>Tailbone</drawLoc>
+	  <colorType>Hair</colorType>
+	  <drawOffsetNorth>(0, 0.1, -0.2)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.1, -0.1)</drawOffsetSouth>
+      <drawOffsetEast>(-0.27, 0.03, -0.12)</drawOffsetEast>
+    </graphicData>
+	<exclusionTags>
+      <li>Back</li>
+	  <li>Wing</li>
+	  <li>Wings</li>
+    </exclusionTags>
+	<statFactors>
+      <IncomingDamageFactor>0.65</IncomingDamageFactor>
+    </statFactors>
+	<statOffsets>
+	  <MoveSpeed>-0.2</MoveSpeed>
+	  <CarryingCapacity>55</CarryingCapacity>
+    </statOffsets>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+</Defs>

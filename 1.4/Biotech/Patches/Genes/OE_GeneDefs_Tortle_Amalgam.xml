@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Obsidia Expansion</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Amalgam Tortle Shell ====================-->
+  <GeneDef>
+    <defName>OE_AmalgamTortleShell</defName>
+    <label>amalgam tortle shell</label> 
+    <description>Carriers of this amalgam gene have tortle shell. This is a very strong shell that significantly reduces taken damage, allows to carry much more weight.</description>
+    <iconPath>UI/Icons/Genes/OE_Gene_AmalgamTortleShell</iconPath>
+    <displayCategory>OE_AmalgamGenes</displayCategory>
+    <displayOrderInCategory>16</displayOrderInCategory>
+	<marketValueFactor>1.50</marketValueFactor>
+	<statFactors>
+      <IncomingDamageFactor>0.50</IncomingDamageFactor>
+    </statFactors>
+	<statOffsets>
+	  <CarryingCapacity>75</CarryingCapacity>
+    </statOffsets>
+    <biostatCpx>4</biostatCpx>
+	<biostatArc>3</biostatArc>
+	<graphicData>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/TortleShell/AmalgamTortleShell</graphicPath>
+	  <drawNorthAfterHair>true</drawNorthAfterHair>
+      <useSkinShader>true</useSkinShader>
+	  <drawLoc>Tailbone</drawLoc>
+	  <colorType>Hair</colorType>
+	  <drawOffsetNorth>(0, 0.1, -0.2)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.1, -0.1)</drawOffsetSouth>
+      <drawOffsetEast>(-0.27, 0.03, -0.12)</drawOffsetEast>
+	  <drawScale>0.9</drawScale>
+    </graphicData>
+	<exclusionTags>
+      <li>Back</li>
+	  <li>Wing</li>
+	  <li>Wings</li>
+    </exclusionTags>
+  </GeneDef>
+
+		  </value>
+	    </li>
+		<li Class="PatchOperationAdd" MayRequire="vanillaracesexpanded.android">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== Amalgam Tortle Shell ====================-->
+  <VREAndroids.AndroidGeneDef ParentName="OE_AmalgamAndroidBase">
+    <defName>OE_VREA_AmalgamTortleShell</defName>
+    <label>amalgam tortle shell</label> 
+    <description>Carriers of this amalgam gene have tortle shell. This is a very strong shell that significantly reduces taken damage, allows to carry much more weight.</description>
+    <iconPath>UI/Icons/Genes/OE_Gene_AmalgamTortleShell</iconPath>
+    <displayOrderInCategory>9112</displayOrderInCategory>
+	<marketValueFactor>1.50</marketValueFactor>
+	<statFactors>
+      <IncomingDamageFactor>0.50</IncomingDamageFactor>
+    </statFactors>
+	<statOffsets>
+	  <CarryingCapacity>75</CarryingCapacity>
+    </statOffsets>
+    <biostatCpx>4</biostatCpx>
+	<biostatMet>-5</biostatMet>
+	<graphicData>
+      <graphicPath>Things/Pawn/Humanlike/BodyAttachments/TortleShell/AmalgamTortleShell</graphicPath>
+	  <drawNorthAfterHair>true</drawNorthAfterHair>
+      <useSkinShader>true</useSkinShader>
+	  <drawLoc>Tailbone</drawLoc>
+	  <colorType>Hair</colorType>
+	  <drawOffsetNorth>(0, 0.1, -0.2)</drawOffsetNorth>
+      <drawOffsetSouth>(0, -0.1, -0.1)</drawOffsetSouth>
+      <drawOffsetEast>(-0.27, 0.03, -0.12)</drawOffsetEast>
+	  <drawScale>0.9</drawScale>
+    </graphicData>
+	<exclusionTags>
+      <li>Back</li>
+	  <li>Wing</li>
+	  <li>Wings</li>
+    </exclusionTags>
+  </VREAndroids.AndroidGeneDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

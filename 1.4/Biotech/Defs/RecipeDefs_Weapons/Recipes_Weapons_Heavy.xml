@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- M60E4 -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>Build_RTMI_Gun_Autocannon</defName>
+		<label>Создать 2A72S Автопушка</label>
+		<description>Прототип мобильной пехотной автопушки на базе транспортного средства.</description>
+		<jobString>Создание автопушки.</jobString>
+		<workAmount>24000</workAmount>
+		<skillRequirements>
+			<Crafting>18</Crafting>
+		</skillRequirements>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>70</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>60</count>
+			</li>
+		</ingredients>
+		<products>
+			<RTMI_Gun_Autocannon>1</RTMI_Gun_Autocannon>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Heavy_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+	</RecipeDef>
+
+
+
+
+
+<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>Build_RTMI_Gun_MachineGun</defName>
+		<label>Создать MG338 Автопушка</label>
+		<description>Прототип мобильного пехотного пулемета, разрабатываемый для заполнения пробела между пулеметами BMG калибра .50 мм и 155мм, использует патрон 30x173.</description>
+		<jobString>Создание автопушки.</jobString>
+		<workAmount>24000</workAmount>
+		<skillRequirements>
+			<Crafting>18</Crafting>
+		</skillRequirements>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>60</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+		</ingredients>
+		<products>
+			<RTMI_Gun_MachineGun>1</RTMI_Gun_MachineGun>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Heavy_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
+	</RecipeDef>
+</Defs>

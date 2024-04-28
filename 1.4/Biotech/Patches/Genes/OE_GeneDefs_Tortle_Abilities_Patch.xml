@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs/GeneDef[defName="OE_Wisdom"]</xpath>
+		  <value>
+		    <abilities>
+			  <li>OE_Wisdom_Haiku</li>
+			</abilities>
+			<descriptionHyperlinks>
+			  <AbilityDef>OE_Wisdom_Haiku</AbilityDef>
+			</descriptionHyperlinks>
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

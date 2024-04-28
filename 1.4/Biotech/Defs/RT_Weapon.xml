@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<ThingDef ParentName="BaseGun_Heavy">
+		<defName>RTMI_Gun_Autocannon</defName>
+		<label>2A72S Автопушка</label>
+		<description>Прототип мобильной пехотной автопушки на базе транспортного средства.</description>
+		<graphicData>
+			<texPath>Things/Weapon/2A72S</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.75</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>Sniper_rifles_D1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags Inherit='False'>
+			<li>HeavyGun</li>
+			<li>MobileInfantry</li>
+		</weaponTags>
+		<statBases>
+			<MarketValue>5500</MarketValue>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
+			<Mass>24</Mass>
+			<Flammability>0</Flammability>
+      		<WorkToMake>20000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+			<Heavy_Component>2</Heavy_Component>
+            <Weapon_Parts>10</Weapon_Parts>
+			<Plastic>20</Plastic>
+		</costList>
+		<verbs>
+			 <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilPattern>Mounted</recoilPattern>
+                <recoilAmount>0.9</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_30x173mm_FMJ</defaultProjectile>
+				<minRange>4</minRange>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+                <warmupTime>1.20</warmupTime>
+                <range>100</range>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+                <soundCast>35mm_shot</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+				<onlyManualCast>true</onlyManualCast>
+            </li>
+		</verbs>
+		 <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>300</magazineSize>
+                <reloadTime>5.00</reloadTime>
+                <ammoSet>AmmoSet_30x173mm</ammoSet>
+            </li>
+        </comps>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+		<smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>10</Weapon_Parts>
+			<Plastic>8</Plastic>
+        </smeltProducts>
+		<modExtensions>
+			<li Class="HeavyWeapons.HeavyWeapon">
+				<isHeavy>true</isHeavy>
+				<supportedArmors>
+					<li MayRequire="VanillaExpanded.VWEHW" >VWE_Apparel_Exoframe</li>
+					<li>RTMI_MobileSuit</li>
+				</supportedArmors>
+				<supportedTraits>
+					<li>Tough</li>
+				</supportedTraits>
+				<disableOptionLabelKey>RTMI.CannotEquipHeavy</disableOptionLabelKey>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGun_Heavy">
+		<defName>RTMI_Gun_MachineGun</defName>
+		<label>MG338 MachineGun</label>
+		<description>Прототип мобильного пехотного пулемета, разрабатываемый для заполнения пробела между пулеметами BMG калибра .50 мм и 155мм, использует патрон 30x173.</description>
+		<graphicData>
+			<texPath>Things/Weapon/MG338</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>Sniper_rifles_D1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags Inherit='False'>
+			<li>HeavyGun</li>
+			<li>MobileInfantry</li>
+		</weaponTags>
+		<statBases>			
+			<MarketValue>9800</MarketValue>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
+			<Mass>24</Mass>
+			<Flammability>0</Flammability>
+      		<WorkToMake>18000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<costList>
+		     <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>10</Weapon_Parts>
+			<Plastic>8</Plastic>
+			<Steel>165</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<verbs>
+			 <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilPattern>Mounted</recoilPattern>
+                <recoilAmount>0.9</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_30x173mm_FMJ</defaultProjectile>
+				<minRange>4</minRange>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+                <warmupTime>1.20</warmupTime>
+                <range>100</range>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+                <soundCast>35mm_shot</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+				<onlyManualCast>true</onlyManualCast>
+            </li>
+		</verbs>
+		 <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>10</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>400</magazineSize>
+                <reloadTime>10.00</reloadTime>
+                <ammoSet>AmmoSet_30x173mm</ammoSet>
+            </li>
+        </comps>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>4</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="HeavyWeapons.HeavyWeapon">
+				<isHeavy>true</isHeavy>
+				<supportedArmors>
+					<li MayRequire="VanillaExpanded.VWEHW" >VWE_Apparel_Exoframe</li>
+					<li>RTMI_MobileSuit</li>
+				</supportedArmors>
+				<supportedTraits>
+					<li>Tough</li>
+				</supportedTraits>
+				<disableOptionLabelKey>RTMI.CannotEquipHeavy</disableOptionLabelKey>
+			</li>
+		</modExtensions>
+		 <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>10</Weapon_Parts>
+			<Plastic>8</Plastic>
+        </smeltProducts>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<MVCF.ModDef>
+		<defName>RTMI_MVCF_Def</defName>
+		<label>Rim thunder</label>
+		<description>nothing here</description>
+		<ActivateFeatures>
+			<li>ApparelVerbs</li>
+			<li>IntegratedToggle</li>
+		</ActivateFeatures>
+	</MVCF.ModDef>
+
+	<ThingDef ParentName="ApparelArmorCataphractBase">
+		<defName>RTMI_MobileSuit</defName>
+		<label>Штурмовая броня Черепах</label>
+		<description>тяжелый бронированный экзоскелет, обеспечивающий различное снаряжение и полную защиту тела.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<graphicData>
+			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+			<texPath>Things/Apparel/MobileInfantry_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>48000</MarketValue>
+			<WorkToMake>74000</WorkToMake>
+			<MaxHitPoints>500</MaxHitPoints>
+			<ArmorRating_Sharp>30</ArmorRating_Sharp>
+				<ArmorRating_Blunt>65</ArmorRating_Blunt>
+			<Insulation_Cold>50</Insulation_Cold>
+			 <ArmorRating_Heat>95</ArmorRating_Heat>
+           <Insulation_Heat>100</Insulation_Heat>
+			<Mass>75</Mass>
+			<Bulk>360</Bulk>
+			<WornBulk>80</WornBulk>
+			<EquipDelay>20</EquipDelay>
+			<JumpRange MayRequire="Ludeon.RimWorld.Royalty">12</JumpRange>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>215</costStuffCount>
+		<costList>
+			<Carbon>20</Carbon>
+			<Compaste>25</Compaste>
+			<GoldBar>15</GoldBar>
+			<BiosyntheticMaterial>6</BiosyntheticMaterial>
+			<ComponentUltra>6</ComponentUltra>
+			<ChitinPlating>70</ChitinPlating>
+			<Chemfuel>100</Chemfuel>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<generateCommonality>0.2</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/MobileInfantry</wornGraphicPath>
+			<blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<tags>
+				<li>MobileInfantry</li>
+				<li>IndustrialMilitaryBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<equippedStatOffsets>
+			 <CarryWeight>185</CarryWeight>
+				   <CarryBulk>165</CarryBulk>
+				   <Suppressability>-0.75</Suppressability>
+				   <IncomingDamageFactor>-0.25</IncomingDamageFactor>
+			       <MoveSpeed>1.25</MoveSpeed>
+				   <MeleeDodgeChance>-0.20</MeleeDodgeChance>
+                   <WorkSpeedGlobal>-0.75</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<comps>
+			<!-- <li Class="CompProperties_Reloadable">
+				<maxCharges>12</maxCharges>
+				<ammoDef>Chemfuel</ammoDef>
+				<ammoCountPerCharge>20</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>charge</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li> -->
+			<li Class="MVCF.Comps.CompProperties_VerbGiver">
+				<verbProps>
+					<li MayRequire="Ludeon.RimWorld.Royalty">
+						<label>jump</label>						
+						<visualLabel>charged jump</visualLabel>
+						<description>jump high...uh...just to cross a fence.</description>
+						<canBeToggled>true</canBeToggled>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+								<cooldownTime>5</cooldownTime>
+							</li>
+						</comps>
+					</li>
+				
+					<li>						
+						<visualLabel>launch smoke grenade</visualLabel>
+						<description>launch smoke screen grenade</description>
+						<label>smoke launcher</label>
+						<canBeToggled>true</canBeToggled>
+						<comps>
+							<li Class="MVCF.VerbComps.VerbCompProperties_Cooldown">
+								<compClass>MVCF.VerbComps.VerbComp_Cooldown</compClass>
+								<cooldownTime>2</cooldownTime>
+							</li>
+							<li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
+								<compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
+								<AmmoFilter>
+									<thingDefs>
+										<li>Ammo_40x46mmGrenade_Smoke</li>
+									</thingDefs>
+								</AmmoFilter>
+								<ItemsPerShot>1</ItemsPerShot>
+								<MaxShots>4</MaxShots>
+								<ReloadSound>Reload_Standard</ReloadSound>
+								<ReloadTimePerShot>2</ReloadTimePerShot>
+							</li>
+						</comps>
+					</li>
+				</verbProps>
+			</li>
+										<li Class="CompProperties_Reloadable">
+								<maxCharges>6</maxCharges>
+								<ammoDef>Ammo_30x29mmGrenade_HE</ammoDef>
+								<ammoCountPerCharge>1</ammoCountPerCharge>
+								<baseReloadTicks>30</baseReloadTicks>
+								<soundReload>Standard_Reload</soundReload>
+								<hotKey>Misc4</hotKey>
+								<chargeNoun>grenade</chargeNoun>
+								<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+							</li>
+		</comps>
+		<verbs>
+		
+
+					<li Class="CombatExtended.VerbPropertiesCE">
+						<label>smoke launcher</label>
+						<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<onlyManualCast>True</onlyManualCast>
+						<warmupTime>0.6</warmupTime>
+						<range>40</range>
+						<minRange>5</minRange>
+						<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+						<soundCast>Shot_IncendiaryLauncher</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>14</muzzleFlashScale>
+						<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+						<targetParams>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+						<defaultProjectile>Bullet_40x46mmGrenade_Smoke</defaultProjectile>
+						<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+					</li>
+					
+					  <li Class="CombatExtended.VerbPropertiesCE">
+								<label>launch 30x29mm grenade</label>
+								<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<onlyManualCast>True</onlyManualCast>
+								<warmupTime>1.5</warmupTime>
+								<range>40</range>
+								<minRange>5</minRange>
+								<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+								<soundCast>Shot_IncendiaryLauncher</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>14</muzzleFlashScale>
+								<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+								<targetParams>
+									<canTargetLocations>true</canTargetLocations>
+								</targetParams>
+								<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+								<defaultProjectile>Bullet_30x29mmGrenade_HE</defaultProjectile>
+								<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+							</li>
+							
+					<li MayRequire="Ludeon.RimWorld.Royalty">
+				        <verbClass>Verb_Jump</verbClass>
+				        <label>jump</label>
+				        <violent>false</violent>
+			         	<hasStandardCommand>false</hasStandardCommand>
+				        <onlyManualCast>True</onlyManualCast>
+				        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				        <warmupTime>0.05</warmupTime>
+				        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
+				        <requireLineOfSight>true</requireLineOfSight>
+				        <flightEffecterDef>JumpFlightEffect</flightEffecterDef>
+				        <soundLanding>JumpPackLand</soundLanding>
+				        <targetParams>
+					       <canTargetLocations>true</canTargetLocations>
+					       <canTargetPawns>false</canTargetPawns>
+					       <canTargetBuildings>false</canTargetBuildings>
+				        </targetParams>
+			        </li>
+				</verbs>
+		<tickerType>Normal</tickerType>
+		<modExtensions>
+			<li Class="VFECore.ApparelDrawPosExtension">
+				<shellPosDrawSettings>
+					<drawPosNorthOffset>(0, 0.01, 0)</drawPosNorthOffset>
+					<drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset>
+					<drawPosWestOffset>(0, 0.01, 0)</drawPosWestOffset>
+					<drawPosEastOffset>(0, 0.01, 0)</drawPosEastOffset>
+				</shellPosDrawSettings>
+			</li>
+			<li Class="VFECore.ApparelExtension">
+				<equippedStatFactors>
+					<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn>
+				</equippedStatFactors>
+				<carryingCapacity>75</carryingCapacity>
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Moving</capacity>
+						<minLevel>0.9</minLevel>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+	<ThingDef ParentName="ApparelArmorHelmetReconBase">
+		<defName>RTMI_MobileSuitHelmet</defName>
+		<label>Тяжелый шлем Черепах</label>
+		<description>тяжелый бронированный экзоскелет, обеспечивающий различное снаряжение и полную защиту тела.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<displayPriority>205</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Apparel/MobileInfantryHelmet_Icon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<statBases>
+			<MarketValue>18420</MarketValue>
+			<WorkToMake>18000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Bulk>9</Bulk>
+			<WornBulk>1</WornBulk>
+			<Mass>10</Mass>
+			<ArmorRating_Sharp>20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>33</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Carbon>10</Carbon>
+			<Compaste>25</Compaste>
+			<BiosyntheticMaterial>6</BiosyntheticMaterial>
+			<ComponentUltra>3</ComponentUltra>
+		</costList>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>FullHead</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/MobileInfantryHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryAdvanced</li>
+				<li>MobileInfantry</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+		<equippedStatOffsets>
+			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+			<MoveSpeed>-0.25</MoveSpeed>
+			<ToxicEnvironmentResistance>0.95</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+
+
+
+
+
+
+<ThingDef ParentName="ApparelArmorCataphractBase">
+		<defName>RTMI_MobileSuit_Shild</defName>
+		<label>Броня берсерков Черепах</label>
+		<description>тяжелый бронированный экзоскелет с генератором щита, обеспечивающий различное снаряжение и полную защиту тела.</description>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+		</recipeMaker>
+		<graphicData>
+			<onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
+			<texPath>Things/Apparel/MobileInfantryS_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<statBases>
+		    <EnergyShieldRechargeRate>0.2</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>8.6</EnergyShieldEnergyMax>
+			<MarketValue>48000</MarketValue>
+			<WorkToMake>74000</WorkToMake>
+			<MaxHitPoints>500</MaxHitPoints>
+			<ArmorRating_Sharp>20</ArmorRating_Sharp>
+				<ArmorRating_Blunt>45</ArmorRating_Blunt>
+			<Insulation_Cold>50</Insulation_Cold>
+			 <ArmorRating_Heat>75</ArmorRating_Heat>
+           <Insulation_Heat>40</Insulation_Heat>
+			<Mass>45</Mass>
+			<Bulk>360</Bulk>
+			<WornBulk>80</WornBulk>
+			<EquipDelay>20</EquipDelay>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<costList>
+			<Carbon>25</Carbon>
+			<Compaste>25</Compaste>
+			<GoldBar>15</GoldBar>
+			<BiosyntheticMaterial>6</BiosyntheticMaterial>
+			<ComponentUltra>4</ComponentUltra>
+			<ChitinPlating>70</ChitinPlating>
+		</costList>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<generateCommonality>0.2</generateCommonality>
+		<apparel>
+			<wornGraphicPath>Things/Apparel/MobileInfantryS</wornGraphicPath>
+			<blocksAddedPartWoundGraphics>true</blocksAddedPartWoundGraphics>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<tags>
+				<li>MobileInfantry_Shild</li>
+				<li>IndustrialMilitaryBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<equippedStatOffsets>
+			        <CarryWeight>185</CarryWeight>
+				   <CarryBulk>165</CarryBulk>
+				   <Suppressability>-0.75</Suppressability>
+				   <IncomingDamageFactor>-0.25</IncomingDamageFactor>
+			       <MoveSpeed>1.85</MoveSpeed>
+				   <MeleeDodgeChance>0.20</MeleeDodgeChance>
+                   <WorkSpeedGlobal>-0.75</WorkSpeedGlobal>
+		</equippedStatOffsets>
+		<comps>
+		<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		<li Class="CompProperties_Shield" />
+		</comps>
+		         <verbs>
+		
+
+				</verbs>
+		<tickerType>Normal</tickerType>
+		<modExtensions>
+			<li Class="VFECore.ApparelDrawPosExtension">
+				<shellPosDrawSettings>
+					<drawPosNorthOffset>(0, 0.01, 0)</drawPosNorthOffset>
+					<drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset>
+					<drawPosWestOffset>(0, 0.01, 0)</drawPosWestOffset>
+					<drawPosEastOffset>(0, 0.01, 0)</drawPosEastOffset>
+				</shellPosDrawSettings>
+			</li>
+			<li Class="VFECore.ApparelExtension">
+				<equippedStatFactors>
+					<ShootingAccuracyPawn>1.2</ShootingAccuracyPawn>
+				</equippedStatFactors>
+				<carryingCapacity>75</carryingCapacity>
+				<pawnCapacityMinLevels>
+					<li>
+						<capacity>Moving</capacity>
+						<minLevel>1.2</minLevel>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<minLevel>0.7</minLevel>
+					</li>
+				</pawnCapacityMinLevels>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

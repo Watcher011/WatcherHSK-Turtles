@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== WisdomHaiku ====================-->
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_OE_Wisdom_Haiku_Effect</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.1</fadeOutTime>
+      <solidTime>0.35</solidTime>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/WisdomHaiku/OE_Wisdom_Haiku_Effect</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <shaderParameters>
+        <_NumFrames>5</_NumFrames>
+        <_FramesPerSec>10</_FramesPerSec>
+      </shaderParameters>
+      <drawSize>(0.35, 0.35)</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>OE_Wisdom_Haiku_GlowFleck</defName>
+	<altitudeLayer>MoteLow</altitudeLayer>
+	<fadeInTime>0.1</fadeInTime>
+	<fadeOutTime>0.1</fadeOutTime>
+	<solidTime>0.1</solidTime>
+	<growthRate>0</growthRate>
+	<acceleration>(0, 0, 0)</acceleration>
+	<graphicData>
+	  <texPath>Things/Mote/WisdomHaiku/OE_Wisdom_Haiku_GlowFleck</texPath>
+	  <shaderType>MoteGlow</shaderType>
+	</graphicData>
+  </FleckDef>
+
+  <EffecterDef>
+    <defName>OE_Wisdom_Haiku_Effect</defName>
+    <children>
+    <li>
+	  <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+	  <fleckDef>OE_Wisdom_Haiku_GlowFleck</fleckDef>
+	  <scale>1.35~1.75</scale>
+	  <rotation>0</rotation>
+	  <ticksBetweenMotes>8</ticksBetweenMotes>
+	  <spawnLocType>OnSource</spawnLocType>
+	</li>
+	<li>
+      <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+      <moteDef>Mote_OE_Wisdom_Haiku_Effect</moteDef>
+	  <burstCount>1~3</burstCount>
+	  <chancePerTick>0.035</chancePerTick>
+	  <rotation>-150~-150</rotation>
+	  <spawnLocType>OnTarget</spawnLocType>
+	  <scale>0.35~0.75</scale>
+	  <positionRadiusMin>0.5</positionRadiusMin>
+	  <positionRadius>0.6</positionRadius>
+	  <attachToSpawnThing>true</attachToSpawnThing>
+	  <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+    </li>
+    </children>
+  </EffecterDef>
+
+</Defs>

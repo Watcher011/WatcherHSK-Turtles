@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Skin - TurtleDarkGreen ====================-->
+<OE_Skin_TurtleDarkGreen.label>черепаховый темно-зеленый цвет</OE_Skin_TurtleDarkGreen.label>
+<OE_Skin_TurtleDarkGreen.labelShortAdj>черепаховый темно-зеленый</OE_Skin_TurtleDarkGreen.labelShortAdj>
+<OE_Skin_TurtleDarkGreen.description>Носители этого гена вырабатывают пигмент, придающий коже черепаховый темно-зеленый цвет.</OE_Skin_TurtleDarkGreen.description>
+
+<OE_Skin_TurtleDarkGreen.symbolPack.prefixSymbols.0.symbol>зеленый</OE_Skin_TurtleDarkGreen.symbolPack.prefixSymbols.0.symbol>
+<OE_Skin_TurtleDarkGreen.symbolPack.prefixSymbols.1.symbol>черепаха</OE_Skin_TurtleDarkGreen.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Skin - TurtleLightGreen ====================-->
+<OE_Skin_TurtleLightGreen.label>черепаховый светло-зеленый цвет</OE_Skin_TurtleLightGreen.label>
+<OE_Skin_TurtleLightGreen.labelShortAdj>черепаховый светло-зеленый</OE_Skin_TurtleLightGreen.labelShortAdj>
+<OE_Skin_TurtleLightGreen.description>Носители этого гена вырабатывают пигмент, придающий коже черепаховый светло-зеленый цвет.</OE_Skin_TurtleLightGreen.description>
+
+<OE_Skin_TurtleLightGreen.symbolPack.prefixSymbols.0.symbol>зеленый</OE_Skin_TurtleLightGreen.symbolPack.prefixSymbols.0.symbol>
+<OE_Skin_TurtleLightGreen.symbolPack.prefixSymbols.1.symbol>черепаха</OE_Skin_TurtleLightGreen.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Skin - TurtleBlue ====================-->
+<OE_Skin_TurtleBlue.label>черепахово-синий цвет</OE_Skin_TurtleBlue.label>
+<OE_Skin_TurtleBlue.labelShortAdj>черепахово-синий</OE_Skin_TurtleBlue.labelShortAdj>
+<OE_Skin_TurtleBlue.description>Носители этого гена вырабатывают пигмент, придающий коже черепахово-синий цвет.</OE_Skin_TurtleBlue.description>
+
+<OE_Skin_TurtleBlue.symbolPack.prefixSymbols.0.symbol>синий</OE_Skin_TurtleBlue.symbolPack.prefixSymbols.0.symbol>
+<OE_Skin_TurtleBlue.symbolPack.prefixSymbols.1.symbol>черепаха</OE_Skin_TurtleBlue.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Skin - TurtleDarkBrown ====================-->
+<OE_Skin_TurtleDarkBrown.label>черепаховый темно-коричневый цвет</OE_Skin_TurtleDarkBrown.label>
+<OE_Skin_TurtleDarkBrown.labelShortAdj>черепаховый темно-коричневый</OE_Skin_TurtleDarkBrown.labelShortAdj>
+<OE_Skin_TurtleDarkBrown.description>Носители этого гена вырабатывают пигмент, придающий коже черепаховый темно-коричневый цвет.</OE_Skin_TurtleDarkBrown.description>
+
+<OE_Skin_TurtleDarkBrown.symbolPack.prefixSymbols.0.symbol>коричневый</OE_Skin_TurtleDarkBrown.symbolPack.prefixSymbols.0.symbol>
+<OE_Skin_TurtleDarkBrown.symbolPack.prefixSymbols.1.symbol>черепаха</OE_Skin_TurtleDarkBrown.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Skin - TurtleLightBrown ====================-->
+<OE_Skin_TurtleLightBrown.label>черепаховый светло-коричневый цвет</OE_Skin_TurtleLightBrown.label>
+<OE_Skin_TurtleLightBrown.labelShortAdj>черепаховый светло-коричневый</OE_Skin_TurtleLightBrown.labelShortAdj>
+<OE_Skin_TurtleLightBrown.description>Носители этого гена вырабатывают пигмент, придающий коже черепаховый светло-коричневый цвет.</OE_Skin_TurtleLightBrown.description>
+
+<OE_Skin_TurtleLightBrown.symbolPack.prefixSymbols.0.symbol>коричневый</OE_Skin_TurtleLightBrown.symbolPack.prefixSymbols.0.symbol>
+<OE_Skin_TurtleLightBrown.symbolPack.prefixSymbols.1.symbol>черепаха</OE_Skin_TurtleLightBrown.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== TortleHead ====================-->
+<OE_TortleHead.label>тортловая голова</OE_TortleHead.label>
+<OE_TortleHead.description>У носителей этого гена тортловая голова.</OE_TortleHead.description>
+
+<!--=============== TortleFingers ====================-->
+<OE_TortleFingers.label>тортловые пальцы</OE_TortleFingers.label>
+<OE_TortleFingers.description>Тортловые грубые пальцы улучшают работу с медицинскими инструментами. Но тяжело работать с оружием дальнего боя.</OE_TortleFingers.description>
+
+<OE_TortleFingers.symbolPack.prefixSymbols.0.symbol>черепаха</OE_TortleFingers.symbolPack.prefixSymbols.0.symbol>
+
+<OE_TortleFingers.symbolPack.suffixSymbols.0.symbol>палец</OE_TortleFingers.symbolPack.suffixSymbols.0.symbol>
+<OE_TortleFingers.symbolPack.suffixSymbols.1.symbol>черепаха</OE_TortleFingers.symbolPack.suffixSymbols.1.symbol>
+<OE_TortleFingers.symbolPack.suffixSymbols.2.symbol>медик</OE_TortleFingers.symbolPack.suffixSymbols.2.symbol>
+
+<!--=============== TortleShell ====================-->
+<OE_TortleShell.label>панцирь тортла</OE_TortleShell.label>
+<OE_TortleShell.description>Носители этого гена имеют панцирь тортла. Это очень прочный панцирь, который значительно снижает получаемый урон, позволяет нести гораздо больший вес, но затрудняет и замедляет передвижение.</OE_TortleShell.description>
+
+<!--=============== Wisdom ====================-->
+<OE_Wisdom.label>мудрость поколений</OE_Wisdom.label>
+<OE_Wisdom.description>Носители этого гена обладают знаниями прошлых поколений и огромным потенциалом для обучения. Также есть возможность вдохновлять других, открывая им мудрость из прошлого.</OE_Wisdom.description>
+
+<!--=============== Hair - TurtleDarkGreen ====================-->
+<OE_Hair_TurtleDarkGreen.label>черепаховый темно-зеленый волос</OE_Hair_TurtleDarkGreen.label>
+
+<!--=============== Hair - TurtleLightGreen ====================-->
+<OE_Hair_TurtleLightGreen.label>черепаховый светло-зеленый волос</OE_Hair_TurtleLightGreen.label>
+
+<!--=============== Hair - TurtleBlue ====================-->
+<OE_Hair_TurtleBlue.label>черепахово-синий волос</OE_Hair_TurtleBlue.label>
+
+<!--=============== Hair - TurtleDarkBrown ====================-->
+<OE_Hair_TurtleDarkBrown.label>черепаховый темно-коричневый волос</OE_Hair_TurtleDarkBrown.label>
+
+<!--=============== Hair - TurtleLightBrown ====================-->
+<OE_Hair_TurtleLightBrown.label>черепаховый светло-коричневый волос</OE_Hair_TurtleLightBrown.label>
+
+</LanguageData>

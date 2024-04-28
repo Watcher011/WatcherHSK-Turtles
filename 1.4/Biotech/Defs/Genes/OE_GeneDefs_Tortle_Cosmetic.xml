@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Skin - TurtleDarkGreen ====================-->
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>OE_Skin_TurtleDarkGreen</defName>
+    <label>turtle dark green skin</label>
+    <labelShortAdj>turtle dark green</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a turtle dark green color.</description>
+    <skinColorOverride>(77, 98, 79)</skinColorOverride>
+    <displayOrderInCategory>708</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>green</symbol></li>
+        <li><symbol>turtle</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+<!--=============== Skin - TurtleLightGreen ====================-->
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>OE_Skin_TurtleLightGreen</defName>
+    <label>turtle light green skin</label>
+    <labelShortAdj>turtle light green</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a turtle light green color.</description>
+    <skinColorOverride>(153, 160, 129)</skinColorOverride>
+    <displayOrderInCategory>709</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>green</symbol></li>
+        <li><symbol>turtle</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+<!--=============== Skin - TurtleBlue ====================-->
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>OE_Skin_TurtleBlue</defName>
+    <label>turtle blue skin</label>
+    <labelShortAdj>turtle blue</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a turtle blue color.</description>
+    <skinColorOverride>(94, 123, 131)</skinColorOverride>
+    <displayOrderInCategory>710</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>blue</symbol></li>
+        <li><symbol>turtle</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+<!--=============== Skin - TurtleDarkBrown ====================-->
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>OE_Skin_TurtleDarkBrown</defName>
+    <label>turtle dark brown skin</label>
+    <labelShortAdj>turtle dark brown</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a turtle dark brown color.</description>
+    <skinColorOverride>(90, 66, 48)</skinColorOverride>
+    <displayOrderInCategory>711</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>brown</symbol></li>
+        <li><symbol>turtle</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+<!--=============== Skin - TurtleLightBrown ====================-->
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>OE_Skin_TurtleLightBrown</defName>
+    <label>turtle light brown skin</label>
+    <labelShortAdj>turtle light brown</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a turtle light brown color.</description>
+    <skinColorOverride>(126, 103, 80)</skinColorOverride>
+    <displayOrderInCategory>712</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>brown</symbol></li>
+        <li><symbol>turtle</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+<!--=============== Hair - TurtleDarkGreen ====================-->
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>OE_Hair_TurtleDarkGreen</defName>
+    <label>turtle dark green hair</label>
+    <hairColorOverride>(77, 98, 79)</hairColorOverride>
+	<selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>708</displayOrderInCategory>
+  </GeneDef>
+<!--=============== Hair - TurtleLightGreen ====================-->
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>OE_Hair_TurtleLightGreen</defName>
+    <label>turtle light green hair</label>
+    <hairColorOverride>(153, 160, 129)</hairColorOverride>
+	<selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>709</displayOrderInCategory>
+  </GeneDef>
+<!--=============== Hair - TurtleBlue ====================-->
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>OE_Hair_TurtleBlue</defName>
+    <label>turtle blue hair</label>
+    <hairColorOverride>(94, 123, 131)</hairColorOverride>
+	<selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>710</displayOrderInCategory>
+  </GeneDef>
+<!--=============== Hair - TurtleDarkBrown ====================-->
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>OE_Hair_TurtleDarkBrown</defName>
+    <label>turtle dark brown hair</label>
+    <hairColorOverride>(90, 66, 48)</hairColorOverride>
+	<selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>711</displayOrderInCategory>
+  </GeneDef>
+<!--=============== Hair - TurtleLightBrown ====================-->
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>OE_Hair_TurtleLightBrown</defName>
+    <label>turtle light brown hair</label>
+    <hairColorOverride>(126, 103, 80)</hairColorOverride>
+	<selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>712</displayOrderInCategory>
+  </GeneDef>
+
+</Defs>

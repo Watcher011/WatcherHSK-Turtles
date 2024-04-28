@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== Wisdom ====================-->
+   <GeneDef>
+    <defName>OE_Wisdom</defName>
+    <label>wisdom of generations</label>
+    <description>Carriers of this gene has the knowledge of past generations and a huge potential for learning. There is also an opportunity to inspire others by revealing to them wisdom from the past.</description>
+    <iconPath>UI/Icons/Genes/OE_Gene_Wisdom</iconPath>
+    <displayCategory>Archite</displayCategory>
+	<marketValueFactor>2</marketValueFactor>
+	<biostatCpx>3</biostatCpx>
+    <biostatArc>1</biostatArc>
+	<displayOrderInCategory>700</displayOrderInCategory>
+	<randomChosen>false</randomChosen>
+	<statOffsets>
+	  <GlobalLearningFactor>1.0</GlobalLearningFactor>
+    </statOffsets>
+	<symbolPack>
+      <prefixSymbols>
+        <li><symbol>brain</symbol></li>
+        <li><symbol>smart</symbol></li>
+        <li><symbol>wisdom</symbol></li>
+		<li><symbol>haiku</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>brain</symbol></li>
+        <li><symbol>wisdom</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+</Defs>

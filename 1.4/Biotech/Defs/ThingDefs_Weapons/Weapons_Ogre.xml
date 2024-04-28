@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- FATSO GUN -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Gun_SawGunTortul</defName>
+        <label>Ярость</label>
+         <graphicData>
+            <texPath>Things/Weapon/MG338</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+        </graphicData>
+        <soundInteract>InteractPTUR</soundInteract>
+        <statBases>
+            <MarketValue>8600</MarketValue>
+            <SightsEfficiency>0.60</SightsEfficiency>
+            <ShotSpread>0.05</ShotSpread>
+            <SwayFactor>0.5</SwayFactor>
+            <RangedWeapon_Cooldown>4.7</RangedWeapon_Cooldown>
+            <Bulk>25.50</Bulk>
+            <Mass>30.00</Mass>
+        </statBases>
+        <weaponTags>
+            <li>OGR1</li>
+        </weaponTags>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+		<costList>
+			<TitaniumBar>100</TitaniumBar>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Weapon_Parts>6</Weapon_Parts>
+			<ComponentSpacer>5</ComponentSpacer>
+			<AdvSniper_Component>1</AdvSniper_Component>
+		</costList>	
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilPattern>Mounted</recoilPattern>
+                <recoilAmount>0.9</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_20x102mm_Incendiary</defaultProjectile>
+				<minRange>3</minRange>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+                <warmupTime>1.20</warmupTime>
+                <range>60</range>
+                <burstShotCount>5</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <soundCast>35mm_shot</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>50</magazineSize>
+                <reloadTime>5.00</reloadTime>
+                <ammoSet>AmmoSet_20x102mm</ammoSet>
+            </li>
+        </comps>
+		<recipeMaker>
+			<researchPrerequisite>Sniper_rifles_D1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>13</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="false">
+				<li>RK_ElectricSmithy</li>
+			</recipeUsers>
+		</recipeMaker>
+        <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>10</Weapon_Parts>
+			<Plastic>8</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+</Defs>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== WisdomHaiku ====================-->
+<OE_Wisdom_Haiku.label>хайку</OE_Wisdom_Haiku.label>
+<OE_Wisdom_Haiku.logRulesInitiator.rulesStrings>
+  <li>r_logentry->[INITIATOR_nameDef] [intiator_used] хайку для натхнення [RECIPIENT_nameDef].</li>
+  <li>intiator_used(INITIATOR_gender==Male)->прочитав</li>
+  <li>intiator_used(INITIATOR_gender==Female)->прочитала</li>
+</OE_Wisdom_Haiku.logRulesInitiator.rulesStrings>
+
+</LanguageData>

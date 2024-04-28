@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+<!--=============== TortleHead ====================-->
+  <HeadTypeDef Name="OETortleHeadBase" ParentName="AverageBase" Abstract="True">
+	<randomChosen>false</randomChosen>
+	<narrow>false</narrow>
+	<eyeOffsetEastWest>(0.175, 0, 0.18)</eyeOffsetEastWest>
+  </HeadTypeDef>
+
+<!--=============== Normal ====================-->
+  <HeadTypeDef ParentName="OETortleHeadBase">
+    <defName>OE_Female_TortleHead_Normal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Female/OE_Female_Tortle_Normal</graphicPath>
+    <gender>Female</gender>
+    <requiredGenes>
+      <li>OE_TortleHead</li>
+    </requiredGenes>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="OETortleHeadBase">
+    <defName>OE_Male_TortleHead_Normal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Male/OE_Male_Tortle_Normal</graphicPath>
+    <gender>Male</gender>
+    <requiredGenes>
+      <li>OE_TortleHead</li>
+    </requiredGenes>
+  </HeadTypeDef>
+<!--=============== Gaunt ====================-->
+  <HeadTypeDef ParentName="OETortleHeadBase">
+    <defName>OE_Female_TortleHead_Gaunt</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Female/OE_Female_Tortle_Gaunt</graphicPath>
+    <gender>Female</gender>
+	<selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>OE_TortleHead</li>
+	  <li>Head_Gaunt</li>
+    </requiredGenes>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="OETortleHeadBase">
+    <defName>OE_Male_TortleHead_Gaunt</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Male/OE_Male_Tortle_Gaunt</graphicPath>
+    <gender>Male</gender>
+	<selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>OE_TortleHead</li>
+	  <li>Head_Gaunt</li>
+    </requiredGenes>
+  </HeadTypeDef>
+<!--=============== Heavy ====================-->
+  <HeadTypeDef ParentName="OETortleHeadBase">
+    <defName>OE_Female_TortleHead_Heavy</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Female/OE_Female_Tortle_Heavy</graphicPath>
+	<randomChosen>false</randomChosen>
+    <gender>Female</gender>
+	<selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>OE_TortleHead</li>
+	  <li>Jaw_Heavy</li>
+    </requiredGenes>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="OETortleHeadBase">
+    <defName>OE_Male_TortleHead_Heavy</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Male/OE_Male_Tortle_Heavy</graphicPath>
+	<randomChosen>false</randomChosen>
+    <gender>Male</gender>
+	<selectionWeight>99999</selectionWeight>
+    <requiredGenes>
+      <li>OE_TortleHead</li>
+	  <li>Jaw_Heavy</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
+</Defs>

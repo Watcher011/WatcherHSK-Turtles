@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+	<mods>
+	  <li>Royalty</li>
+	</mods>
+	<match Class="PatchOperationSequence">
+	  <operations>
+	    <li Class="PatchOperationAdd">
+		  <xpath>/Defs</xpath>
+		  <value>
+<!--=============== WisdomHaiku ====================-->
+  <AbilityDef>
+    <defName>OE_Wisdom_Haiku</defName>
+    <label>haiku reading</label>
+    <description>Reading an ancient haiku inspires, improves the ability to learn and work.</description>
+    <iconPath>UI/Abilities/OE_Wisdom_Haiku</iconPath>
+    <category>WordOf</category>
+	<warmupMote>Mote_WarmupWordOf</warmupMote>
+    <warmupSound>Psycast_WordOf_Warmup</warmupSound>
+    <displayOrder>704</displayOrder>
+	<cooldownTicksRange>300000</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+	  <range>1.9</range>
+	  <warmupTime>5.0</warmupTime>
+	  <targetable>false</targetable>
+      <targetParams>
+		 <canTargetSelf>true</canTargetSelf>
+	  </targetParams>
+    </verbProperties>
+	<statBases>
+      <Ability_EffectRadius>1.9</Ability_EffectRadius>
+	  <Ability_Duration>1000</Ability_Duration>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>WordOfApply</fleckDef>
+        <sound>Psycast_WordOf_Effect</sound>
+      </li>
+	  <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OE_Wisdom_Haiku</hediffDef>
+        <applicableToMechs>False</applicableToMechs>
+      </li>
+	  <li Class="CompProperties_AbilityGiveInspiration">
+        <canTargetBaby>False</canTargetBaby>
+      </li>
+      <li Class="CompProperties_AbilitySocialInteraction">
+        <interactionDef>OE_Wisdom_Haiku</interactionDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <HediffDef>
+    <defName>OE_Wisdom_Haiku</defName>
+    <label>haiku</label>
+    <description>Ancient haiku improves the ability to learn and work.</description>
+	<hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+	<isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+          <GlobalLearningFactor>0.55</GlobalLearningFactor>
+		  <WorkSpeedGlobal>0.55</WorkSpeedGlobal>
+        </statOffsets>
+      </li>
+    </stages>
+	<comps>
+      <li Class="HediffCompProperties_Effecter">
+        <stateEffecter>OE_Wisdom_Haiku_Effect</stateEffecter>
+      </li>
+	  <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+
+  <InteractionDef>
+    <defName>OE_Wisdom_Haiku</defName>
+    <label>haiku</label>
+    <workerClass>InteractionWorker</workerClass>
+    <ignoreTimeSinceLastInteraction>True</ignoreTimeSinceLastInteraction>
+    <symbol>Things/Mote/SpeechSymbols/WordOfInspiration</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] read haiku to inspire [RECIPIENT_nameDef].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+		  </value>
+	    </li>
+	  </operations>
+	</match>
+</Operation>
+
+</Patch>

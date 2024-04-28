@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+<!-- Syndicate Bases -->
+	<PawnKindDef Abstract="True" Name="TortleBase">
+		<race>Human</race>
+		<defaultFactionType>Tortle</defaultFactionType>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+					<li>Pirate</li>
+					<li>Outlander</li>
+					<li>Outsider</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<isFighter>true</isFighter>
+		<chemicalAddictionChance>0.15</chemicalAddictionChance>
+		<itemQuality>Good</itemQuality>
+		<invNutrition>5</invNutrition>
+		<invFoodDef>soylentgreen</invFoodDef>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>50</maxGenerationAge>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>1.6</max>
+		</gearHealthRange>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>Shell</apparelLayer>
+			</li>
+		</specificApparelRequirements>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<techHediffsMoney>
+			<min>5005</min>
+			<max>9000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>Futuristic</li>
+		</techHediffsTags>
+		<techHediffsChance>0.8</techHediffsChance>
+		<techHediffsMaxAmount>6</techHediffsMaxAmount>
+		<techHediffsRequired>
+			<li>ExoskeletonSuit</li>
+			<li>BrainStimulator</li>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			 <OE_Tortle>999</OE_Tortle>
+		  </xenotypeChances>
+		  <warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- Prospector -->
+	<PawnKindDef Name="TortleProspectorBase" ParentName="TortleBase" Abstract="True">
+		<label>Черепах Разведчик</label>
+		<combatPower>290</combatPower>
+		<apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>1.6</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>10000</min>
+			<max>98000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>MobileInfantry</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>5500</min>
+			<max>9900</max>
+		</weaponMoney>
+		<weaponTags>
+			 <li>MobileInfantry</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~16</range>
+			</li>
+		</skills>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>12~19</initialResistanceRange>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>8</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>250</min>
+							<max>3500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeTierFour</li>
+						</weaponTags>
+						<magazineCount>
+							<min>3</min>
+							<max>5</max>
+						</magazineCount>
+					</li>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>50</min>
+							<max>1500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeFlashbang</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
+		<techHediffsRequired>
+			<li>AuxiliaryAI_Sharpshooter</li>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleProspectorBase">
+		<defName>TortleProspector</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleProspectorBase">
+		<defName>TortleProspector_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<!-- Striker -->
+	<PawnKindDef Name="TortleStrikerBase" ParentName="TortleBase" Abstract="True">
+		<label>Черепаха Штурмовик</label>
+		<combatPower>300</combatPower>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>1.6</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>10000</min>
+			<max>98000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>MobileInfantry</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>5500</min>
+			<max>9900</max>
+		</weaponMoney>
+		<weaponTags>
+			 <li>OGR1</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~12</range>
+			</li>
+		</skills>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>12~19</initialResistanceRange>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>8</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>250</min>
+							<max>3500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeTierFour</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>50</min>
+							<max>1050</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeFlashbang</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
+		<techHediffsRequired>
+			<li>AuxiliaryAI_Sharpshooter</li>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleStrikerBase">
+		<defName>TortleStriker</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleStrikerBase">
+		<defName>TortleStriker_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<!-- Hunter -->
+	<PawnKindDef Name="TortleHunterBase" ParentName="TortleBase" Abstract="True">
+		<label>Черепаха Загонщик</label>
+		<combatPower>365</combatPower>
+		<itemQuality>Good</itemQuality>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>1.6</max>
+		</gearHealthRange>
+	    <apparelMoney>
+			<min>10000</min>
+			<max>98000</max>
+		</apparelMoney>
+		<apparelTags>
+			
+			<li>MobileInfantry</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>5500</min>
+			<max>9900</max>
+		</weaponMoney>
+		<weaponTags>
+			 	<li>MobileInfantry</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~18</range>
+			</li>
+		</skills>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>12~19</initialResistanceRange>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>8</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>250</min>
+							<max>3500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeTierFour</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>50</min>
+							<max>1500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeFlashbang</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
+		<techHediffsRequired>
+			<li>AuxiliaryAI_Sharpshooter</li>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleHunterBase">
+		<defName>TortleHunter</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleHunterBase">
+		<defName>TortleHunter_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<!-- Hawkeye -->
+	<PawnKindDef Name="TortleHawkeyeBase" ParentName="TortleBase" Abstract="True">
+		<label>Черепаха Наблюдатель</label>
+		<combatPower>300</combatPower>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>1.6</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>10000</min>
+			<max>98000</max>
+		</apparelMoney>
+		<apparelTags>
+			
+			<li>MobileInfantry</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>5500</min>
+			<max>9900</max>
+		</weaponMoney>
+		<weaponTags>
+			 <li>OGR1</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~18</range>
+			</li>
+		</skills>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>8</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>250</min>
+							<max>6500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeTierFour</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>50</min>
+							<max>1500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeFlashbang</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
+		<techHediffsRequired>
+			<li>AuxiliaryAI_Sharpshooter</li>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleHawkeyeBase">
+		<defName>TortleHawkeye</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleHawkeyeBase">
+		<defName>TortleHawkeye_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<!-- Devastator -->
+	<PawnKindDef Name="TortleDevastatorBase" ParentName="TortleBase" Abstract="True">
+		<label>Черепаха Осквернитель</label>
+		<combatPower>290</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>1.6</max>
+		</gearHealthRange>
+	<apparelMoney>
+			<min>10000</min>
+			<max>98000</max>
+		</apparelMoney>
+		<apparelTags>
+			
+			<li>MobileInfantry</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>5500</min>
+			<max>9900</max>
+		</weaponMoney>
+		<weaponTags>
+			 	<li>MobileInfantry</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>15~23</initialResistanceRange>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>12</max>
+				</primaryMagazineCount>
+			</li>
+		</modExtensions>
+		<techHediffsRequired>
+			<li>AuxiliaryAI_Sharpshooter</li>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleDevastatorBase">
+		<defName>TortleDevastator</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleDevastatorBase">
+		<defName>TortleDevastator_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<PawnKindDef Name="TortleDevastatorHeavyBase" ParentName="TortleDevastatorBase" Abstract="True">
+		<weaponTags Inherit="false">
+		 <li>OGR1</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>5500</min>
+			<max>9600</max>
+		</weaponMoney>
+	<apparelMoney>
+			<min>10000</min>
+			<max>98000</max>
+		</apparelMoney>
+		<apparelTags>
+			
+			<li>MobileInfantry</li>
+		</apparelTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>15~24</initialResistanceRange>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>8</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>250</min>
+							<max>6500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeTierFour</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>50</min>
+							<max>1500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeFlashbang</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleDevastatorHeavyBase">
+		<defName>TortleDevastatorHeavy</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleDevastatorHeavyBase">
+		<defName>TortleDevastatorHeavy_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<!-- Annihilator -->
+	<PawnKindDef Name="TortleAnnihilatorBase" ParentName="TortleBase" Abstract="True">
+		<label>Черепаха жопонадиратель</label>
+		<canBeSapper>true</canBeSapper>
+		<combatPower>430</combatPower>
+		<itemQuality>Masterwork</itemQuality>
+		<techHediffsChance>0.7</techHediffsChance>
+		<factionLeader>true</factionLeader>
+		<gearHealthRange>
+			<min>0.4</min>
+			<max>1.6</max>
+		</gearHealthRange>
+	<apparelMoney>
+			<min>10000</min>
+			<max>98000</max>
+		</apparelMoney>
+		<apparelTags>
+		
+				<li>MobileInfantry</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>5500</min>
+			<max>9200</max>
+		</weaponMoney>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>6~14</range>
+			</li>
+		</skills>
+		<weaponTags>
+			<li>HellsphereCannonGun</li>
+			<li>GunDay</li>
+				<li>MobileInfantry</li>
+		</weaponTags>
+		<initialWillRange>3~4</initialWillRange>
+		<initialResistanceRange>25~35</initialResistanceRange>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>5</min>
+					<max>8</max>
+				</primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>250</min>
+							<max>6500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeTierFour</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>50</min>
+							<max>1500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeFlashbang</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>2</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
+		<techHediffsRequired>
+			<li>AuxiliaryAI_Sharpshooter</li>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleAnnihilatorBase">
+		<defName>TortleAnnihilator</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleAnnihilatorBase">
+		<defName>TortleAnnihilator_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+	<!-- Bloodborne -->
+	<PawnKindDef Name="TortleBloodborneBase" ParentName="TortleBase" Abstract="True">
+		<label>Черепаха прорыва</label>
+		<combatPower>370</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<gearHealthRange>
+			<min>0.7</min>
+			<max>1.9</max>
+		</gearHealthRange>
+		<apparelMoney>
+			<min>10000</min>
+			<max>98000</max>
+		</apparelMoney>
+		<apparelTags>
+				
+		<li>MobileInfantry_Shild</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>5500</min>
+			<max>9900</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>RK_Demoman</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~13</range>
+			</li>
+		</skills>
+		<techHediffsRequired>
+			<li>PowerClaw</li>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RK_MagicWand</thingDef>
+					<choiceChance>0.6</choiceChance>
+					<countRange>
+						<min>12</min>
+						<max>20</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>RK_MagicWand</thingDef>
+					<choiceChance>0.4</choiceChance>
+					<countRange>
+						<min>15</min>
+						<max>30</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>15~23</initialResistanceRange>
+		<modExtensions>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>50</min>
+							<max>4500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GrenadeFlashbang</li>
+						</weaponTags>
+						<magazineCount>
+							<min>1</min>
+							<max>8</max>
+						</magazineCount>
+					</li>
+				</sidearms>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleBloodborneBase">
+		<defName>TortleBloodborne</defName>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="TortleBloodborneBase">
+		<defName>TortleBloodborne_Acidifier</defName>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+
+
+
+
+
+
+
+
+
+  <PawnKindDef Name="BaseturtlesPawn" Abstract="True">
+        <race>Mutant_Ogre_turtles</race>
+        <!-- <defaultFactionType>OgreClan</defaultFactionType> -->
+		<defaultFactionType>Tortle</defaultFactionType>
+        <aiAvoidCover>true</aiAvoidCover>
+        <techHediffsChance>0</techHediffsChance>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<initialWillRange>4~5</initialWillRange>
+		<initialResistanceRange>37~49</initialResistanceRange>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Humanlike/Monster/Gutcher</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>2.2</drawSize>
+                    <shadowData>
+                        <volume>(0.2, 0.3, 0.8)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+ </PawnKindDef>
+  
+	<!-- Ogre Bases -->
+  <PawnKindDef ParentName="BaseturtlesPawn">
+        <defName>turtlesA</defName>
+        <label>ЧЕРЕПАХ</label>
+        <combatPower>375</combatPower>
+        <weaponMoney>
+            <min>270</min>
+            <max>330</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>Ogre</li>
+        </weaponTags>
+    </PawnKindDef>
+	
+	<!-- Destroyer -->
+  <PawnKindDef ParentName="BaseturtlesPawn">
+        <defName>turtlesB</defName>
+        <label>ЧЕРЕПАХОИД</label>
+        <combatPower>800</combatPower>
+        <weaponMoney>
+            <min>2600</min>
+            <max>2900</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>OGR1</li>
+        </weaponTags>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>4</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+	
+	
+	<!-- Devastator -->
+  <PawnKindDef ParentName="BaseturtlesPawn">
+        <defName>turtlesC</defName>
+        <label>ЧЕРЕПАХОНАВТ</label>
+        <combatPower>820</combatPower>
+        <weaponMoney>
+            <min>2650</min>
+            <max>2700</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>OGR2</li>
+        </weaponTags>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>4</max>
+                </primaryMagazineCount>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

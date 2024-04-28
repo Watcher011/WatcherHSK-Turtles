@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== Skin - TurtleDarkGreen ====================-->
+<OE_Skin_TurtleDarkGreen.label>turtle dark green skin</OE_Skin_TurtleDarkGreen.label>
+<OE_Skin_TurtleDarkGreen.labelShortAdj>turtle dark green</OE_Skin_TurtleDarkGreen.labelShortAdj>
+<OE_Skin_TurtleDarkGreen.description>Carriers of this gene produce a pigment that turns their skin a turtle dark green color.</OE_Skin_TurtleDarkGreen.description>
+
+<OE_Skin_TurtleDarkGreen.symbolPack.prefixSymbols.0.symbol>green</OE_Skin_TurtleDarkGreen.symbolPack.prefixSymbols.0.symbol>
+<OE_Skin_TurtleDarkGreen.symbolPack.prefixSymbols.1.symbol>turtle</OE_Skin_TurtleDarkGreen.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Skin - TurtleLightGreen ====================-->
+<OE_Skin_TurtleLightGreen.label>turtle light green skin</OE_Skin_TurtleLightGreen.label>
+<OE_Skin_TurtleLightGreen.labelShortAdj>turtle light green</OE_Skin_TurtleLightGreen.labelShortAdj>
+<OE_Skin_TurtleLightGreen.description>Carriers of this gene produce a pigment that turns their skin a turtle light green color.</OE_Skin_TurtleLightGreen.description>
+
+<OE_Skin_TurtleLightGreen.symbolPack.prefixSymbols.0.symbol>green</OE_Skin_TurtleLightGreen.symbolPack.prefixSymbols.0.symbol>
+<OE_Skin_TurtleLightGreen.symbolPack.prefixSymbols.1.symbol>turtle</OE_Skin_TurtleLightGreen.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Skin - TurtleBlue ====================-->
+<OE_Skin_TurtleBlue.label>turtle blue skin</OE_Skin_TurtleBlue.label>
+<OE_Skin_TurtleBlue.labelShortAdj>turtle blue</OE_Skin_TurtleBlue.labelShortAdj>
+<OE_Skin_TurtleBlue.description>Carriers of this gene produce a pigment that turns their skin a turtle blue color.</OE_Skin_TurtleBlue.description>
+
+<OE_Skin_TurtleBlue.symbolPack.prefixSymbols.0.symbol>blue</OE_Skin_TurtleBlue.symbolPack.prefixSymbols.0.symbol>
+<OE_Skin_TurtleBlue.symbolPack.prefixSymbols.1.symbol>turtle</OE_Skin_TurtleBlue.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Skin - TurtleDarkBrown ====================-->
+<OE_Skin_TurtleDarkBrown.label>turtle dark brown skin</OE_Skin_TurtleDarkBrown.label>
+<OE_Skin_TurtleDarkBrown.labelShortAdj>turtle dark brown</OE_Skin_TurtleDarkBrown.labelShortAdj>
+<OE_Skin_TurtleDarkBrown.description>Carriers of this gene produce a pigment that turns their skin a turtle dark brown color.</OE_Skin_TurtleDarkBrown.description>
+
+<OE_Skin_TurtleDarkBrown.symbolPack.prefixSymbols.0.symbol>brown</OE_Skin_TurtleDarkBrown.symbolPack.prefixSymbols.0.symbol>
+<OE_Skin_TurtleDarkBrown.symbolPack.prefixSymbols.1.symbol>turtle</OE_Skin_TurtleDarkBrown.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== Skin - TurtleLightBrown ====================-->
+<OE_Skin_TurtleLightBrown.label>turtle light brown skin</OE_Skin_TurtleLightBrown.label>
+<OE_Skin_TurtleLightBrown.labelShortAdj>turtle light brown</OE_Skin_TurtleLightBrown.labelShortAdj>
+<OE_Skin_TurtleLightBrown.description>Carriers of this gene produce a pigment that turns their skin a turtle light brown color.</OE_Skin_TurtleLightBrown.description>
+
+<OE_Skin_TurtleLightBrown.symbolPack.prefixSymbols.0.symbol>brown</OE_Skin_TurtleLightBrown.symbolPack.prefixSymbols.0.symbol>
+<OE_Skin_TurtleLightBrown.symbolPack.prefixSymbols.1.symbol>turtle</OE_Skin_TurtleLightBrown.symbolPack.prefixSymbols.1.symbol>
+
+<!--=============== TortleHead ====================-->
+<OE_TortleHead.label>tortle head</OE_TortleHead.label>
+<OE_TortleHead.description>Carriers of this gene has a tortle head.</OE_TortleHead.description>
+
+<!--=============== TortleFingers ====================-->
+<OE_TortleFingers.label>tortle fingers</OE_TortleFingers.label>
+<OE_TortleFingers.description>Tortle rough fingers improve work with medical instruments. But it's difficult to work with ranged weapon.</OE_TortleFingers.description>
+
+<OE_TortleFingers.symbolPack.prefixSymbols.0.symbol>turtle</OE_TortleFingers.symbolPack.prefixSymbols.0.symbol>
+
+<OE_TortleFingers.symbolPack.suffixSymbols.0.symbol>finger</OE_TortleFingers.symbolPack.suffixSymbols.0.symbol>
+<OE_TortleFingers.symbolPack.suffixSymbols.1.symbol>turtle</OE_TortleFingers.symbolPack.suffixSymbols.1.symbol>
+<OE_TortleFingers.symbolPack.suffixSymbols.2.symbol>medical</OE_TortleFingers.symbolPack.suffixSymbols.2.symbol>
+
+<!--=============== TortleShell ====================-->
+<OE_TortleShell.label>tortle shell</OE_TortleShell.label>
+<OE_TortleShell.description>Carriers of this gene have tortle shell. This is a very strong shell that significantly reduces taken damage, allows to carry much more weight, but makes it difficult and slow to move.</OE_TortleShell.description>
+
+<!--=============== Wisdom ====================-->
+<OE_Wisdom.label>wisdom of generations</OE_Wisdom.label>
+<OE_Wisdom.description>Carriers of this gene has the knowledge of past generations and a huge potential for learning. There is also an opportunity to inspire others by revealing to them wisdom from the past.</OE_Wisdom.description>
+
+<!--=============== Hair - TurtleDarkGreen ====================-->
+<OE_Hair_TurtleDarkGreen.label>turtle dark green hair</OE_Hair_TurtleDarkGreen.label>
+
+<!--=============== Hair - TurtleLightGreen ====================-->
+<OE_Hair_TurtleLightGreen.label>turtle light green hair</OE_Hair_TurtleLightGreen.label>
+
+<!--=============== Hair - TurtleBlue ====================-->
+<OE_Hair_TurtleBlue.label>turtle blue hair</OE_Hair_TurtleBlue.label>
+
+<!--=============== Hair - TurtleDarkBrown ====================-->
+<OE_Hair_TurtleDarkBrown.label>turtle dark brown hair</OE_Hair_TurtleDarkBrown.label>
+
+<!--=============== Hair - TurtleLightBrown ====================-->
+<OE_Hair_TurtleLightBrown.label>turtle light brown hair</OE_Hair_TurtleLightBrown.label>
+
+</LanguageData>

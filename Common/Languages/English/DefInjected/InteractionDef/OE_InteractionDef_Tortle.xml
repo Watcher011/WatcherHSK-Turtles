@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+<!--=============== WisdomHaiku ====================-->
+<OE_Wisdom_Haiku.label>haiku</OE_Wisdom_Haiku.label>
+<OE_Wisdom_Haiku.logRulesInitiator.rulesStrings>
+  <li>r_logentry->[INITIATOR_nameDef] read haiku to inspire [RECIPIENT_nameDef].</li>
+</OE_Wisdom_Haiku.logRulesInitiator.rulesStrings>
+
+</LanguageData>
