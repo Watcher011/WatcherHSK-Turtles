@@ -52,7 +52,7 @@
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
                 <warmupTime>1.20</warmupTime>
                 <range>100</range>
-                <burstShotCount>10</burstShotCount>
+                <burstShotCount>5</burstShotCount>
                 <ticksBetweenBurstShots>30</ticksBetweenBurstShots>
                 <soundCast>35mm_shot</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -70,7 +70,7 @@
                 <aimedBurstShotCount>5</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>300</magazineSize>
+                <magazineSize>80</magazineSize>
                 <reloadTime>5.00</reloadTime>
                 <ammoSet>AmmoSet_30x173mm</ammoSet>
             </li>
@@ -185,7 +185,7 @@
                 <aimedBurstShotCount>10</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>400</magazineSize>
+                <magazineSize>100</magazineSize>
                 <reloadTime>10.00</reloadTime>
                 <ammoSet>AmmoSet_30x173mm</ammoSet>
             </li>

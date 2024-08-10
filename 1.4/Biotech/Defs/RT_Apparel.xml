@@ -92,9 +92,9 @@
 			</defaultOutfitTags>
 		</apparel>
 		<equippedStatOffsets>
-			 <CarryWeight>185</CarryWeight>
+			      <CarryWeight>185</CarryWeight>
 				   <CarryBulk>165</CarryBulk>
-				   <Suppressability>-0.75</Suppressability>
+				   <Suppressability>-0.35</Suppressability>
 				   <IncomingDamageFactor>-0.25</IncomingDamageFactor>
 			       <MoveSpeed>1.25</MoveSpeed>
 				   <MeleeDodgeChance>-0.20</MeleeDodgeChance>
@@ -164,28 +164,6 @@
 							</li>
 		</comps>
 		<verbs>
-		
-
-					<li Class="CombatExtended.VerbPropertiesCE">
-						<label>smoke launcher</label>
-						<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
-						<hasStandardCommand>true</hasStandardCommand>
-						<onlyManualCast>True</onlyManualCast>
-						<warmupTime>0.6</warmupTime>
-						<range>40</range>
-						<minRange>5</minRange>
-						<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
-						<soundCast>Shot_IncendiaryLauncher</soundCast>
-						<soundCastTail>GunTail_Medium</soundCastTail>
-						<muzzleFlashScale>14</muzzleFlashScale>
-						<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
-						<targetParams>
-							<canTargetLocations>true</canTargetLocations>
-						</targetParams>
-						<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
-						<defaultProjectile>Bullet_40x46mmGrenade_Smoke</defaultProjectile>
-						<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-					</li>
 					
 					  <li Class="CombatExtended.VerbPropertiesCE">
 								<label>launch 30x29mm grenade</label>
@@ -289,11 +267,11 @@
 			<Bulk>9</Bulk>
 			<WornBulk>1</WornBulk>
 			<Mass>10</Mass>
-			<ArmorRating_Sharp>20</ArmorRating_Sharp>
-			<ArmorRating_Blunt>33</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.54</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
+			<ArmorRating_Sharp>12</ArmorRating_Sharp>
+			<ArmorRating_Blunt>25</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.24</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
 			<EquipDelay>4</EquipDelay>
 		</statBases>
 		<stuffCategories>
@@ -367,15 +345,15 @@
 		</graphicData>
 		<statBases>
 		    <EnergyShieldRechargeRate>0.2</EnergyShieldRechargeRate>
-			<EnergyShieldEnergyMax>8.6</EnergyShieldEnergyMax>
+			<EnergyShieldEnergyMax>4.6</EnergyShieldEnergyMax>
 			<MarketValue>48000</MarketValue>
 			<WorkToMake>74000</WorkToMake>
 			<MaxHitPoints>500</MaxHitPoints>
-			<ArmorRating_Sharp>20</ArmorRating_Sharp>
-				<ArmorRating_Blunt>45</ArmorRating_Blunt>
-			<Insulation_Cold>50</Insulation_Cold>
-			 <ArmorRating_Heat>75</ArmorRating_Heat>
-           <Insulation_Heat>40</Insulation_Heat>
+			<ArmorRating_Sharp>10</ArmorRating_Sharp>
+				<ArmorRating_Blunt>25</ArmorRating_Blunt>
+			<Insulation_Cold>20</Insulation_Cold>
+			 <ArmorRating_Heat>0.5</ArmorRating_Heat>
+           <Insulation_Heat>10</Insulation_Heat>
 			<Mass>45</Mass>
 			<Bulk>360</Bulk>
 			<WornBulk>80</WornBulk>
@@ -422,7 +400,7 @@
 		<equippedStatOffsets>
 			        <CarryWeight>185</CarryWeight>
 				   <CarryBulk>165</CarryBulk>
-				   <Suppressability>-0.75</Suppressability>
+				   <Suppressability>-0.35</Suppressability>
 				   <IncomingDamageFactor>-0.25</IncomingDamageFactor>
 			       <MoveSpeed>1.85</MoveSpeed>
 				   <MeleeDodgeChance>0.20</MeleeDodgeChance>
